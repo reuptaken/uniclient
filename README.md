@@ -1,6 +1,6 @@
 # uniclient
 
-Node.js util to watch your profit/loss on Uniswap market in real time.
+Node.js util to watch your profit/loss on Uniswap market in real time. It loads all past transactions first and then watches the market for new events, refreshing every 10 seconds.
 
 Edit file to add your ETH address and node 
 

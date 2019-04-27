@@ -15,12 +15,29 @@ Edit file to add your ETH address and two nodes (which can can be the same)
 
 You can also set `biteSize` constant to lower value if your node can't keep up with the requests volume. Default is too high for Infura.
 
-Usage:
+### Usage:
 
 ```./node uniswap2.js TOKEN```
 
-Sample output:
+### Sample output:
 
 ![Sample output](https://i.imgur.com/eN0S8N6.png "Sample output")
+
+#### Explanation:
+
+* Rate (for BUY/SELL) - the rate at which last swap was executed
+* Liquidity - total ETH/TOKEN in pool
+* Pool rate: current rate
+* Pool fees: total fees collected by all liquidity providers (experimental!)
+* Deposited: total deposited - total witdrawn.
+* Share: current share in pool
+* Max Profit: profit from fees, see above (experimental!)
+* Current P/L: current profit or loss.
+
+Keep in mind that eg. Current P/L is calculated even if someone has no share in liquidity.
+
+### Known bugs
+
+* Wrong outputs if someone has 100% share in pool. To be fixed.
 
 IANAD (I'm not a developer), so use with care.

@@ -34,7 +34,7 @@ You can also set `biteSize` constant to lower value if your node can't keep up w
 * Max Profit: profit from fees, see above (experimental!)
 * Current P/L: current profit or loss.
 
-Keep in mind that eg. Current P/L is calculated even if someone has no share in liquidity.
+Keep in mind that eg. Current P/L is calculated even if someone no longer has any share in liquidity and changes when TOKEN/ETH ratio changes. The same applies to Max profit (in ETH).
 
 ### Known bugs
 

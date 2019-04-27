@@ -1011,18 +1011,18 @@ const Uniswap = {
 };
 const BigNumber = require('bignumber.js');
 
-let providerCurrent = new ethers.providers.JsonRpcProvider(); //provider for current blocks, has to keep at least biteSize blocks
+let providerCurrent = new ethers.providers.JsonRpcProvider(''); //provider for current blocks, has to keep at least biteSize blocks/
 let providerArchive = new ethers.providers.JsonRpcProvider(''); //provider for "old" blocks
 let iface = new ethers.utils.Interface(Uniswap.abi);
 const biteSize = 25000; // how many blocks (or rather logs) should we request at once (for Infura should be much lower)
 
 const args = process.argv;
-const curSymbol = args[2] || "DAI";
+const curSymbol = args[2] || "RLC";
 const providerFeePercent = 0.003;
 let tokenDecimals = Math.pow(10, Uniswap.tokens[curSymbol].decimals);
 let exchangeAddress = Uniswap.tokens[curSymbol].address;
 
-const myAddress = ''; // your address
+const myAddress = '0x6f62ba4a7d3c43e061fc414069e965065d63c40b'; // your address
 
 let numMyShareTokens = new BigNumber(0);
 let numMintedShareTokens = new BigNumber(0);
@@ -1041,7 +1041,7 @@ var curTokenTotal = 0;
 
 let msg;
 
-let provider = providerArchive; // first read from archive
+let provider = providerArchive; // 
 
 async function getLogs(fromBlock, toBlock) {
     await provider.getLogs({

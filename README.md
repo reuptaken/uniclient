@@ -6,10 +6,12 @@ uniclient2.js is rewritten from scratch, using ethers.js instead of web3.js (so 
 
 Edit file to add your ETH address and two nodes (which can can be the same) 
 
-    let providerCurrent = new ethers.providers.JsonRpcProvider(''); //provider for "old" blocks
-    let providerArchive = new ethers.providers.JsonRpcProvider(''); //provider for current blocks, has to keep at least biteSize blocks
+    let providerCurrent = new ethers.providers.JsonRpcProvider(''); //provider for current blocks, has to keep at least biteSize blocks
+    let providerArchive = new ethers.providers.JsonRpcProvider(''); //provider for "old" blocks
 
     const myAddress = ''; // put your address here
+
+You can also set `biteSize` constant to lower value if your node can't keep up with the requests volume.
 
 Usage:
 

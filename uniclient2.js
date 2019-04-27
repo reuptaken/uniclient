@@ -1011,8 +1011,8 @@ const Uniswap = {
 };
 const BigNumber = require('bignumber.js');
 
-let providerCurrent = new ethers.providers.JsonRpcProvider(); //provider for "old" blocks
-let providerArchive = new ethers.providers.JsonRpcProvider(''); //provider for current blocks, has to keep at least biteSize blocks
+let providerCurrent = new ethers.providers.JsonRpcProvider(); //provider for current blocks, has to keep at least biteSize blocks
+let providerArchive = new ethers.providers.JsonRpcProvider(''); //provider for "old" blocks
 let iface = new ethers.utils.Interface(Uniswap.abi);
 const biteSize = 25000; // how many blocks (or rather logs) should we request at once (for Infura should be much lower)
 

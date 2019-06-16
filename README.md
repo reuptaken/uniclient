@@ -39,5 +39,6 @@ Keep in mind that eg. Current P/L is calculated even if someone no longer has an
 ### Known bugs
 
 * Wrong outputs if someone has 100% share in pool. To be fixed.
+* Doesn't handle reorgs well, so you should restart it from time to time to get accurate results
 
 IANAD (I'm not a developer), so use with care.

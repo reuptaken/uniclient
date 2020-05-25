@@ -17,7 +17,7 @@ You can also set `biteSize` constant to lower value if your node can't keep up w
 
 ### Usage:
 
-```./node uniswap2.js TOKEN```
+```./node uniclient2.js TOKEN```
 
 ### Sample output:
 

@@ -1,5 +1,7 @@
 # uniclient2
 
+### WARNING: this script is compatible with Uniswap v1
+
 Node.js util to watch your (or someone else) profit/loss on Uniswap market in real time. 
 
 uniclient2.js is rewritten from scratch, using ethers.js instead of web3.js (so you have to install ethers.js). It reads logs from Ethereum node in batches, so it works with Infura and other similar services.

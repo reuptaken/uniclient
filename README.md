@@ -1,6 +1,6 @@
 # uniclient2
 
-### WARNING: this script is compatible with Uniswap v1
+### WARNING: this script is compatible with Uniswap v1 ONLY!
 
 Node.js util to watch your (or someone else) profit/loss on Uniswap market in real time. 
 
